@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var imagePicture: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func showMessagedTapped(_ sender: Any) {
         labelName.text = "Hi There"
-        labelName.textColor = .cyan
+        imagePicture.image = UIImage(named: "image1")
     }
     
 
